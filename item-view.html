@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge 'unsafe-inline' 'unsafe-eval'">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
+    <script defer src="js/app.min.js"></script>
     <title>Item View</title>
 </head>
 
@@ -29,7 +30,59 @@
             </div>
         </div>
     </nav>
-    <main class="dashboard-frame"></main>
+    <main class="view__content-area">
+        <div class="back-link__wrapper">
+            <a href="" class=" nav-link nav-link_grid_on"><img src="img/store_icons/chevron-back.svg" alt=""><span
+                    class="body-normal">Back</span></a>
+        </div>
+        <div class="top-area__wrapper">
+            <div class="top-area__image-area">
+                <div class="top-area__image-gallery">
+                    <div class="top-area__gallery-container top-area__gallery-container_0"><img src="img/watch.png"
+                            alt=""></div>
+                    <div class="top-area__gallery-container top-area__gallery-container_1"><img src="img/watch.png"
+                            alt=""></div>
+                    <div class="top-area__gallery-container top-area__gallery-container_2"><img src="img/watch.png"
+                            alt=""></div>
+                </div>
+                <div class="top-area__main-image">
+                    <img src="img/watch.png" alt="">
+                </div>
+            </div>
+            <div class="top-area__text-content">
+                <div class="top-area__header">
+                    <h1 class="title-normal black-for-text bold">Apple Watch</h1>
+                    <p class="subtitle-small placeholder-for-text medium">Series 5 SE</p>
+                </div>
+                <div class="top-area__special item-in-bag__rating">
+                    <div class="stars">
+                        <img src="img/store_icons/star.svg" alt="">
+                        <img src="img/store_icons/star.svg" alt="">
+                        <img src="img/store_icons/star.svg" alt="">
+                        <img src="img/store_icons/star.svg" alt="">
+                        <img src="img/store_icons/star-half.svg" alt="">
+                    </div>
+                    <p class="accent-for-text body-normal condensed">4.5 / 5</p>
+                </div>
+                <div class="top-area__price">
+                    <p class="subtitle-small black-for-text medium">$ 529.99</p>
+                </div>
+                <div class="top-area__short-description short-description">
+                    <p class="short-description__text body-normal dark-for-text">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Quis
+                        pellentesque tellus imperdiet mattis. Proin in quis ipsum non amet imperdiet. Dignissim nisi leo
+                        a at. Sit nec lacus, nunc volutpat, tincidunt lorem mi duis. Vitae elementum libero.</p>
+                </div>
+                <div class="top-area__cta">
+                    <button class="add-to-bag-btn top-area__button"><img src="img/store_icons/bag-add.svg"
+                            class="add-to-bag-btn__img buttons__icon buttons__icon_big buttons__icon_white"></img><span
+                            class="add-to-bag-btn_txt body-normal  medium subnormal-lh white-for-text ">Add to
+                            Bag</span></button>
+                </div>
+            </div>
+        </div>
+
+    </main>
     <section class="bag-area bag-area__appearance">
         <h2 class="caption caption__box subtitle-normal dark-for-text medium">Bag</h2>
         <div class="bag-items bag-items__box">
@@ -46,7 +99,6 @@
                     Bag</span></a></div>
     </section>
 </div>
-    <script src="js/app.min.js"></script>
 </body>
 
 </html>
