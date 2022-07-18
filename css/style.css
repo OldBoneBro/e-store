@@ -1725,6 +1725,10 @@ select {
     flex-direction: row;
     order: 0;
   }
+
+  .top-area__cta {
+    align-items: center;
+  }
 }
 @media (max-width: 725px) and (orientation: landscape) {
   .top-area__image-area {
