@@ -1256,7 +1256,7 @@ select {
   padding: 0.5rem;
 }
 
-.minus {
+.minus, .bag__item::after {
   filter: invert(26%) sepia(68%) saturate(2140%) hue-rotate(335deg) brightness(93%) contrast(113%);
 }
 
@@ -1412,15 +1412,15 @@ select {
 .cta__box {
   display: grid;
   justify-content: center;
-  max-width: 329px;
-  max-height: 72px;
   padding: 1rem;
   margin: 0.625rem 0.5rem 0 0.5rem;
 }
 
+.cta__box_with-total {
+  gap: 2rem;
+}
+
 .cta__button {
-  max-width: 159px;
-  max-height: 40px;
   grid-template: 1fr/1.5rem 1fr;
 }
 
@@ -1700,6 +1700,7 @@ select {
 }
 
 .bag__item {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -1732,6 +1733,7 @@ select {
   gap: 0.5rem;
   order: 1;
   flex-grow: 1;
+  flex-shrink: 1;
 }
 
 .bag__product-name {
@@ -1863,25 +1865,19 @@ select {
   order: 2;
 }
 
-.bag__header_samll {
-  font-size: clamp(2rem, 3.13vw + 1rem, 3.051875rem);
-  line-height: 59px;
+.bag__item::after {
+  content: url(../img/store_icons/close.svg);
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  right: 5%;
 }
 
-.product-name {
-  font-size: clamp(1.28rem, 2.17vw + 1rem, 1.953125rem);
-}
-
-.product-subtitle {
-  font-size: clamp(0.819375rem, 1.4vw + 1rem, 1.25rem);
-}
-
-.product-discription {
-  font-size: clamp(0.819375rem, 1.4vw + 1rem, 1.25rem);
-}
-
-.product-price {
-  font-size: clamp(0.819375rem, 1.4vw + 1rem, 1.25rem);
+.cta_total {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 0;
 }
 
 @media (max-width: 1439px) {
@@ -1923,6 +1919,11 @@ select {
     display: block;
   }
 }
+@media (max-width: 908px) {
+  .bag__item {
+    flex-direction: column;
+  }
+}
 @media (max-width: 725px) {
   .top-area__wrapper {
     flex-direction: column;
@@ -1945,16 +1946,30 @@ select {
     align-items: center;
   }
 
-  .bag__item {
-    flex-direction: column;
+  .bag__content {
+    padding: 1.5rem;
+  }
+
+  .bag__product-image {
+    height: 18.875rem;
+  }
+
+  .stars {
+    padding: 0;
   }
 }
 @media (max-width: 725px) and (orientation: landscape) {
-  .top-area__image-area {
-    flex-direction: row;
+  .top-area__image-gallery {
+    flex-direction: column;
   }
 
-  .top-area__image-gallery {
+  .bag__content {
+    padding: 3rem;
+  }
+}
+@media (max-width: 448px) {
+  .bag__product-rating,
+.bag__product-price-rating {
     flex-direction: column;
   }
 }
