@@ -1257,10 +1257,12 @@ select {
 }
 
 .minus, .bag__item::after {
+  width: 1.125rem;
   filter: invert(26%) sepia(68%) saturate(2140%) hue-rotate(335deg) brightness(93%) contrast(113%);
 }
 
 .plus {
+  width: 1.125rem;
   filter: invert(52%) sepia(93%) saturate(738%) hue-rotate(117deg) brightness(99%) contrast(98%);
 }
 
@@ -1418,9 +1420,11 @@ select {
 
 .cta__box_with-total {
   gap: 2rem;
+  justify-items: center;
 }
 
 .cta__button {
+  width: 10.0625rem;
   grid-template: 1fr/1.5rem 1fr;
 }
 
@@ -1720,6 +1724,8 @@ select {
   align-items: center;
   justify-items: center;
   justify-content: center;
+  max-width: 12.72125rem;
+  max-height: 15.875rem;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -1813,7 +1819,7 @@ select {
   flex-direction: row;
   align-items: flex-start;
   padding: 0.5rem;
-  gap: 0.5rem;
+  gap: 0.65625rem;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -1878,6 +1884,14 @@ select {
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   padding: 0;
+}
+
+.cta__inner-text {
+  width: 5.0625rem;
+}
+
+.cta__box_hidden {
+  display: none;
 }
 
 @media (max-width: 1439px) {
