@@ -1080,11 +1080,11 @@ select {
   align-items: center;
 }
 
-.nav-link__text_display_off {
+.nav-link__text_display-switch {
   display: none;
 }
 
-.nav-link__text_display_on {
+.nav-link__text_display-animation {
   animation: show-text 0.1s ease-in-out both;
 }
 
