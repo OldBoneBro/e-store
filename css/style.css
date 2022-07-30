@@ -1256,7 +1256,7 @@ select {
   padding: 0.5rem;
 }
 
-.minus, .bag__item::after {
+.minus, .bag__button-img {
   width: 1.125rem;
   filter: invert(26%) sepia(68%) saturate(2140%) hue-rotate(335deg) brightness(93%) contrast(113%);
 }
@@ -1847,7 +1847,7 @@ select {
   flex-grow: 0;
 }
 
-.bag__increase-button, .bag__decrease-button {
+.bag__increase-button, .bag__delete-button, .bag__decrease-button {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1871,12 +1871,9 @@ select {
   order: 2;
 }
 
-.bag__item::after {
-  content: url(../img/store_icons/close.svg);
+.bag__delete-button {
   position: absolute;
-  width: 1.5rem;
-  height: 1.5rem;
-  right: 5%;
+  right: 4.21%;
 }
 
 .cta_total {
