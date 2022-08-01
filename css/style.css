@@ -1891,6 +1891,10 @@ select {
   display: none;
 }
 
+.bag__number {
+  text-align: center;
+}
+
 @media (max-width: 1439px) {
   .bag-area {
     display: none;
