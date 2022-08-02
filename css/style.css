@@ -1893,6 +1893,13 @@ select {
 
 .bag__number {
   text-align: center;
+  -moz-appearance: textfield;
+}
+
+.bag__number::-webkit-outer-spin-button,
+.bag__number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 @media (max-width: 1439px) {
