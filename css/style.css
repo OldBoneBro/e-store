@@ -1903,8 +1903,15 @@ select {
 }
 
 @media (max-width: 1439px) {
-  .bag-area {
+  .bag-area,
+.bag__product-x,
+.bag__product-multiplier {
     display: none;
+  }
+
+  .cta_total {
+    grid-template-columns: 1fr;
+    justify-items: center;
   }
 }
 @media (max-width: 1082px) {
