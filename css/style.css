@@ -338,6 +338,39 @@ select {
   animation: jello-horizontal 0.9s both;
 }
 
+.rotate-scale-up {
+  -webkit-animation: rotate-scale-up 0.65s linear both;
+  animation: rotate-scale-up 0.65s linear both;
+}
+
+@-webkit-keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
+  }
+}
+@keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
+  }
+}
 @-webkit-keyframes jello-horizontal {
   0% {
     -webkit-transform: scale3d(1, 1, 1);
@@ -551,6 +584,7 @@ select {
 
 .logo__item {
   display: grid;
+  border: none;
 }
 
 .logo__item_transparent {
@@ -2000,6 +2034,24 @@ select {
   .bag__product-rating,
 .bag__product-price-rating {
     flex-direction: column;
+  }
+
+  body {
+    overflow: hidden;
+  }
+
+  .page__overlay {
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  .nav-bar__overlay {
+    position: absolute;
+    z-index: 9999;
+  }
+
+  .page-frame__overlay,
+.bag-area__overlay {
+    z-index: -1;
   }
 }
 html {
