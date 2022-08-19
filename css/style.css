@@ -1077,7 +1077,7 @@ select {
   width: 4.5rem;
 }
 
-.navbar_default_with_animation {
+.navbar_default-with-animation {
   animation: shrinked 0.1s ease-in-out both;
 }
 
