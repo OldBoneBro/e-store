@@ -353,7 +353,17 @@ select {
   animation: rotate-scale-up 0.65s linear both;
 }
 
-@-webkit-keyframes .rotate-center-reverse {
+@keyframes rotate-center-reverse {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate-center-reverse {
   0% {
     -webkit-transform: rotate(0);
     transform: rotate(0);
@@ -1383,6 +1393,14 @@ select {
   overflow: hidden;
 }
 
+.page__container_less-elements {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ededed;
+  overflow: hidden;
+}
+
 .page-frame {
   scrollbar-color: #191e1680 #ededed;
   scrollbar-width: thin;
@@ -1956,6 +1974,144 @@ select {
 .bag__number::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.checkout__content-frame {
+  position: absolute;
+  left: 102px;
+  top: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 1.5rem;
+  overflow-y: scroll;
+}
+
+.checkout__address-card {
+  width: 54.4375rem;
+  height: 14.375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  gap: 0.5rem;
+  border-radius: 0.8125rem;
+}
+
+.address-card {
+  background: #ffffff;
+}
+
+.address-card__header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0.5rem;
+}
+
+.address-card__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0;
+  flex: none;
+  align-self: stretch;
+}
+
+.address-card__current-address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+
+.address-card__actions {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0.5rem;
+  gap: 0.625rem;
+}
+
+.checkout__inner-content-frame {
+  width: 871px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem;
+  gap: 0.5rem;
+  border-radius: 0.8125rem;
+}
+
+.inner-content-frame {
+  background: #ffffff;
+}
+
+.inner-content-frame__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0.5rem 0.5rem 1.5rem;
+  gap: 1rem;
+}
+
+.checkout__total-summary {
+  width: 15.1875rem;
+  position: absolute;
+  left: 1075px;
+  top: 59px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  gap: 1rem;
+  background: #ffffff;
+  border-radius: 0.75rem;
+}
+
+.checkout__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  gap: 0.5rem;
+  border: 1px solid #1a1f16;
+  border-radius: 0.6875rem;
+  background: none;
+}
+
+.checkout__button-back {
+  position: absolute;
+  left: 1207px;
+  top: 403px;
+}
+
+.address-card__text {
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+
+.address-card__button {
+  width: 6.125rem;
+  height: 2.1875rem;
+}
+
+.address-card__card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 0.5rem;
+}
+
+.address-card__gift-card {
+  gap: 0.625rem;
 }
 
 @media (max-width: 1439px) {
