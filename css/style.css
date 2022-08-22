@@ -1976,6 +1976,14 @@ select {
   margin: 0;
 }
 
+.enclosing-container {
+  max-width: 76rem;
+  height: 100vh;
+  display: grid;
+  grid-template: 1fr/repeat(2, 1fr);
+  justify-items: center;
+}
+
 .checkout__content-frame {
   position: absolute;
   left: 102px;
@@ -2062,6 +2070,7 @@ select {
 
 .checkout__total-summary {
   width: 15.1875rem;
+  height: 19.9375rem;
   position: absolute;
   left: 1075px;
   top: 59px;
@@ -2070,8 +2079,42 @@ select {
   align-items: flex-start;
   padding: 1rem;
   gap: 1rem;
-  background: #ffffff;
   border-radius: 0.75rem;
+}
+
+.total-summary {
+  background: #ffffff;
+}
+
+.total-summary__line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  gap: 0.5rem;
+  flex: none;
+  align-self: stretch;
+}
+
+.total-summary__divider {
+  border: 1px solid #bfd1e5;
+  flex: none;
+  align-self: stretch;
+}
+
+.total-summary__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  gap: 0.5rem;
+  background: #1a1f16;
+  border-radius: 11px;
+  flex: none;
+  align-self: stretch;
+  border: none;
 }
 
 .checkout__button {
@@ -2087,6 +2130,8 @@ select {
 }
 
 .checkout__button-back {
+  width: 6.9375rem;
+  height: 2.5rem;
   position: absolute;
   left: 1207px;
   top: 403px;
@@ -2112,6 +2157,14 @@ select {
 
 .address-card__gift-card {
   gap: 0.625rem;
+}
+
+.inner-content-frame__devider {
+  width: 51.4375rem;
+  height: 0;
+  border: 1px solid #191e1680;
+  flex: none;
+  align-self: stretch;
 }
 
 @media (max-width: 1439px) {
