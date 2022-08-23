@@ -1980,25 +1980,28 @@ select {
   max-width: 76rem;
   height: 100vh;
   display: grid;
-  grid-template: 1fr/repeat(2, 1fr);
-  justify-items: center;
+  grid-template: 1fr/54.4375rem 1fr;
+  gap: 6.375rem;
+  justify-content: center;
+  margin: auto;
 }
 
 .checkout__content-frame {
-  position: absolute;
-  left: 102px;
-  top: 56px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
   gap: 1.5rem;
   overflow-y: scroll;
+  padding-top: 3.5rem;
+  scrollbar-width: none;
+}
+
+.checkout__content-frame::-webkit-scrollbar {
+  display: none;
 }
 
 .checkout__address-card {
   width: 54.4375rem;
-  height: 14.375rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -2028,12 +2031,16 @@ select {
   align-self: stretch;
 }
 
-.address-card__current-address {
+.address-card__current-address, .address-card__payment {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0.5rem;
   gap: 0.5rem;
+}
+
+.address-card__payment {
+  gap: 1rem;
 }
 
 .address-card__actions {
@@ -2071,9 +2078,6 @@ select {
 .checkout__total-summary {
   width: 15.1875rem;
   height: 19.9375rem;
-  position: absolute;
-  left: 1075px;
-  top: 59px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -2132,9 +2136,6 @@ select {
 .checkout__button-back {
   width: 6.9375rem;
   height: 2.5rem;
-  position: absolute;
-  left: 1207px;
-  top: 403px;
 }
 
 .address-card__text {
@@ -2165,6 +2166,14 @@ select {
   border: 1px solid #191e1680;
   flex: none;
   align-self: stretch;
+}
+
+.fixed-elements {
+  display: grid;
+  gap: 1.5625rem;
+  grid-template: 19.9375rem/auto;
+  justify-items: end;
+  padding-top: 3.5rem;
 }
 
 @media (max-width: 1439px) {
