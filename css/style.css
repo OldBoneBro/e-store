@@ -1349,10 +1349,13 @@ select {
 }
 
 .checkbox-input {
+  display: flex;
   width: 1rem;
   height: 1rem;
   outline: #60695c solid 1px;
   border-radius: 2px;
+  flex-shrink: 0;
+  margin: 0 0.25rem;
 }
 
 .checkbox-input_selected {
@@ -2131,6 +2134,8 @@ select {
   border: 1px solid #1a1f16;
   border-radius: 0.6875rem;
   background: none;
+  text-decoration: none;
+  color: #1a1f16;
 }
 
 .checkout__button-back {
@@ -2194,10 +2199,15 @@ select {
 
   .enclosing-container {
     gap: 0;
+    grid-template: 1fr/1fr;
   }
 
   .checkout__content-frame {
     padding: 3.5rem 1rem 1rem 1rem;
+  }
+
+  .total-summary__button {
+    align-self: center;
   }
 }
 @media (max-width: 1082px) {
@@ -2237,6 +2247,7 @@ select {
 @media (max-width: 908px) {
   .bag__item {
     flex-direction: column;
+    align-items: center;
   }
 
   .address-card__content {
@@ -2246,6 +2257,10 @@ select {
 
   .address-card__actions {
     justify-content: center;
+  }
+
+  .checkout__inner-content-frame {
+    align-items: normal;
   }
 }
 @media (max-width: 725px) {
