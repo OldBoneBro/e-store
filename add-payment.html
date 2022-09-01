@@ -15,9 +15,38 @@
 <body>
     <div class="page__container_less-elements page__container__forms">
     <div class="add-payment__wrapper">
-        <section class="add-payment_payment-methods">
-            <header></header>
+        <section class="add-payment_payment-methods payment-methods">
+            <header class="add-payment__header">
+                <h2 class="subtitle-small expanded regular dark-for-text">Select a Card</h2>
+            </header>
+            <div class="payment-methods__payment-method">
+                <div class="payment-methods__icon-area"><img class="placeholder-for-svgs"
+                        src="./img/store_icons/card.svg"></div>
+                <p class="body-normal regular placeholder-for-text">MasterCard ending in 4242</p>
+            </div>
+            <div class="payment-methods__payment-method">
+                <div class="payment-methods__icon-area"><img class="placeholder-for-svgs"
+                        src="./img/store_icons/card.svg"></div>
+                <p class="body-normal regular placeholder-for-text">VISA Debit ending in 2894</p>
+            </div>
         </section>
+        <form class="add-payment__form form">
+            <header class="form__padding">
+                <h2 class="form__header subtitle-small expanded regular dark-for-text">Add a new Card</h2>
+            </header>
+            <div class="form__padding">
+                <label for="name" class="form__input-container">
+                    <p class="input__lable body-small condensed placeholder-for-text">Cardholder Name</p>
+                    <input class="form__input" id="name" type="text" placeholder="John Maker">
+                </label>
+            </div>
+            <div class="form__padding">
+                <label for="name" class="form__input-container">
+                    <p class="input__lable body-small condensed placeholder-for-text">Card Number</p>
+                    <input class="form__input" id="name" type="text" placeholder="5126-5987-2214-7621">
+                </label>
+            </div>
+        </form>
     </div>
 </div>
 </body>
