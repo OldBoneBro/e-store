@@ -1222,6 +1222,7 @@ select {
 }
 
 .input__lable {
+  width: fit-content;
   padding: 0 0.5rem;
 }
 
@@ -2253,16 +2254,15 @@ select {
   background: #ffffff;
 }
 
-.form__padding {
+.form__input-container {
+  height: fit-content;
+  display: grid;
+  gap: 0.5rem;
   padding: 0.5rem;
 }
 
-.form__input-container {
-  display: grid;
-  gap: 0.5rem;
-}
-
-.form__input {
+.form__input-area {
+  height: fit-content;
   display: grid;
   padding: 1rem 1.5rem;
   background: #ffffff;
@@ -2271,8 +2271,23 @@ select {
   border: 0;
 }
 
+.form__input-area_with-icon {
+  grid-template-columns: 1.5rem 1fr;
+  gap: 0.625rem;
+}
+
+.form__input {
+  height: fit-content;
+  border: none;
+  padding: 0;
+}
+
 .form__input::placeholder {
   color: #191e1680;
+}
+
+.hidden {
+  display: none;
 }
 
 @media (max-width: 1439px) {
