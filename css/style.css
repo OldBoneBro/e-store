@@ -185,7 +185,7 @@ select {
 }
 
 .placeholder-for-svgs {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .wrapper {
@@ -233,7 +233,7 @@ select {
   line-height: 30px;
 }
 
-.subnormal-lh, .h5, .body-normal, .form__input::placeholder {
+.subnormal-lh, .h5, .body-normal, .form__input {
   line-height: 24px;
 }
 
@@ -265,7 +265,7 @@ select {
   font-size: 25px;
 }
 
-.h5, .body-normal, .form__input::placeholder {
+.h5, .body-normal, .form__input {
   font-size: 20px;
 }
 
@@ -292,7 +292,7 @@ select {
   font-weight: 400;
 }
 
-.medium, .form__input::placeholder {
+.medium, .form__input {
   font-weight: 500;
 }
 
@@ -2261,6 +2261,18 @@ select {
   padding: 0.5rem;
 }
 
+.form__input-container_small {
+  grid-template-columns: 11.625rem;
+}
+
+.form__input-container_smaller {
+  grid-template-columns: 8.8125rem;
+}
+
+.form__input-container_paddingless {
+  padding: 0;
+}
+
 .form__input-area {
   height: fit-content;
   display: grid;
@@ -2282,8 +2294,31 @@ select {
   padding: 0;
 }
 
+.form__input_small {
+  width: 6.5rem;
+}
+
+.form__input_placeholder-hidden {
+  width: 8.625rem;
+}
+
+.form__input_smaller {
+  width: 5.8125rem;
+}
+
 .form__input::placeholder {
   color: #191e1680;
+}
+
+.form__date-cvc {
+  display: grid;
+  grid-template-columns: 11.625rem 8.8125rem;
+  gap: 2rem;
+  padding: 0 0.5rem;
+}
+
+.form__input-field {
+  padding: 0;
 }
 
 .hidden {
