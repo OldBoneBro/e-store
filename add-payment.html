@@ -36,14 +36,15 @@
             </header>
             <div class="form__input-container">
                 <p class="input__lable body-small condensed placeholder-for-text"><label for="name">Cardholder
-                        Name</p></label>
+                        Name</label></p>
                 <div class="form__input-area">
                     <input class="form__input" id="name" type="text" placeholder="John Maker">
                 </div>
             </div>
             <div class="form__input-container">
-                <p class="input__lable body-small condensed placeholder-for-text"><label for="card">Card Number</p>
-                </label>
+                <p class="input__lable body-small condensed placeholder-for-text"><label for="card">Card Number</label>
+                </p>
+
                 <div class="form__input-area form__input-area_with-icon">
                     <img class="placeholder-for-svgs" src="img/store_icons/card.svg" alt="">
                     <input data-input-with-icon class="form__input" id="card" type="text"
@@ -52,10 +53,10 @@
             </div>
             <div class="form__date-cvc">
                 <div class="form__input-field">
-                    <div class="form__input-container form__input-container_small form__input-container_paddingless">
+                    <div class="form__input-container form__input-container_paddingless">
                         <p class="input__lable body-small condensed placeholder-for-text"><label for="date">Expiry Date
-                        </p>
-                        </label>
+                            </label></p>
+
                         <div class="form__input-area form__input-area_with-icon form__input-area_small">
                             <img class="placeholder-for-svgs" src="img/store_icons/calendar-number.svg" alt="">
                             <input data-input-with-icon class="form__input form__input_small" id="date" type="text"
@@ -64,14 +65,18 @@
                     </div>
                 </div>
                 <div class="form__input-field">
-                    <div class="form__input-container form__input-container_smaller form__input-container_paddingless">
-                        <p class="input__lable body-small condensed placeholder-for-text"><label for="cvc">CVC</p>
-                        </label>
+                    <div class="form__input-container form__input-container_paddingless">
+                        <p class="input__lable body-small condensed placeholder-for-text"><label for="cvc">CVC</label>
+                        </p>
                         <div class="form__input-area">
                             <input class="form__input form__input_smaller" id="cvc" type="text" placeholder="123">
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="form__save-checkbox">
+                <input type="checkbox" id="checkbox" class="form__checkbox">
+                <label for="checkbox" class="form__checkbox-lable">Save this as your default payment method</label>
             </div>
         </form>
     </div>
