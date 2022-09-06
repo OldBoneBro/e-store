@@ -38,7 +38,8 @@
                 <p class="input__lable body-small condensed placeholder-for-text"><label for="name">Cardholder
                         Name</label></p>
                 <div class="form__input-area">
-                    <input class="form__input" id="name" type="text" placeholder="John Maker">
+                    <input class="form__input" id="name" type="text" placeholder="John Maker"
+                        pattern="[A-Za-z]+\s[A-Za-z]+">
                 </div>
             </div>
             <div class="form__input-container">
@@ -77,6 +78,20 @@
             <div class="form__save-checkbox">
                 <input type="checkbox" id="checkbox" class="form__checkbox">
                 <label for="checkbox" class="form__checkbox-lable">Save this as your default payment method</label>
+            </div>
+            <div class="form__cta">
+                <button type="submit" class="form__cta-button">
+                    <img class="buttons__icon_white" src="img/store_icons/card.svg" alt="">
+                    <span class="body-normal medium white-for-text">Add Payment Method</span>
+                </button>
+            </div>
+            <div class="add-payment__information information">
+                <a href="./checkout.html" class="information__button"><span
+                        class="body-small regular condensed dark-for-text">Back</span></a>
+                <div class="information__info">
+                    <img class="buttons__icon_success" src="img/store_icons/lock-closed.svg" alt="">
+                    <span class="body-small regular condensed success-for-text">Secure Connection</span>
+                </div>
             </div>
         </form>
     </div>
