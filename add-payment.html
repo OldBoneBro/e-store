@@ -16,8 +16,8 @@
     <div class="page__container_less-elements page__container__forms">
     <div class="add-payment__wrapper">
         <section class="add-payment_payment-methods payment-methods">
-            <header class="add-payment__header">
-                <h2 class="subtitle-small expanded regular dark-for-text">Select a Card</h2>
+            <header class="add-payment__header header">
+                <h2 class="header__text subtitle-small expanded regular dark-for-text">Select a Card</h2>
             </header>
             <div class="payment-methods__payment-method">
                 <div class="payment-methods__icon-area"><img class="placeholder-for-svgs"
@@ -31,25 +31,25 @@
             </div>
         </section>
         <form class="add-payment__form form">
-            <header class="form__padding">
-                <h2 class="form__header subtitle-small expanded regular dark-for-text">Add a new Card</h2>
+            <header class="form__padding header">
+                <h2 class="header__text form__header subtitle-small expanded regular dark-for-text">Add a new Card</h2>
             </header>
             <div class="form__input-container">
                 <p class="input__lable body-small condensed placeholder-for-text"><label for="name">Cardholder
                         Name</label></p>
                 <div class="form__input-area">
-                    <input class="form__input" id="name" type="text" placeholder="John Maker"
+                    <input data-cardholder-name class="form__input" id="name" type="text" placeholder="John Maker"
                         pattern="[A-Za-z]+\s[A-Za-z]+">
                 </div>
             </div>
             <div class="form__input-container">
                 <p class="input__lable body-small condensed placeholder-for-text"><label for="card">Card Number</label>
                 </p>
-
                 <div class="form__input-area form__input-area_with-icon">
                     <img class="placeholder-for-svgs" src="img/store_icons/card.svg" alt="">
-                    <input data-input-with-icon class="form__input" id="card" type="text"
-                        placeholder="5126-5987-2214-7621">
+                    <input data-card-number class="form__input form__input-number" id="card" type="text"
+                        inputmode="numeric" placeholder="5126-5987-2214-7621"
+                        pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}">
                 </div>
             </div>
             <div class="form__date-cvc">
@@ -57,10 +57,9 @@
                     <div class="form__input-container form__input-container_paddingless">
                         <p class="input__lable body-small condensed placeholder-for-text"><label for="date">Expiry Date
                             </label></p>
-
                         <div class="form__input-area form__input-area_with-icon form__input-area_small">
                             <img class="placeholder-for-svgs" src="img/store_icons/calendar-number.svg" alt="">
-                            <input data-input-with-icon class="form__input form__input_small" id="date" type="text"
+                            <input data-expiry-date class="form__input form__input_small" id="date" type="number"
                                 placeholder="MM/YYYY">
                         </div>
                     </div>
@@ -70,17 +69,18 @@
                         <p class="input__lable body-small condensed placeholder-for-text"><label for="cvc">CVC</label>
                         </p>
                         <div class="form__input-area">
-                            <input class="form__input form__input_smaller" id="cvc" type="text" placeholder="123">
+                            <input data-cvc class="form__input form__input_smaller" id="cvc" type="number"
+                                placeholder="123" pattern="^\d{3}">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="form__save-checkbox">
-                <input type="checkbox" id="checkbox" class="form__checkbox">
+                <input data-save-card type="checkbox" id="checkbox" class="form__checkbox">
                 <label for="checkbox" class="form__checkbox-lable">Save this as your default payment method</label>
             </div>
             <div class="form__cta">
-                <button type="submit" class="form__cta-button">
+                <button data-submit-card type="submit" class="form__cta-button">
                     <img class="buttons__icon_white" src="img/store_icons/card.svg" alt="">
                     <span class="body-normal medium white-for-text">Add Payment Method</span>
                 </button>

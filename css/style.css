@@ -2208,11 +2208,14 @@ select {
   width: 42.25rem;
   display: grid;
   gap: 2rem;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .add-payment_payment-methods {
   width: 100%;
   display: grid;
+  grid-template-columns: 1fr;
   justify-content: flex-start;
   align-items: flex-start;
   border-radius: 13px;
@@ -2221,7 +2224,7 @@ select {
 
 .add-payment__header {
   display: grid;
-  justify-content: center;
+  justify-content: start;
   align-content: center;
   padding: 1rem;
   gap: 0.5rem;
@@ -2279,14 +2282,30 @@ select {
 }
 
 .form__input-area_with-icon {
-  grid-template-columns: 1.5rem 1fr;
+  grid-template-columns: 1.5rem 13.6875rem;
   gap: 0.625rem;
+}
+
+.form__input-area_small {
+  grid-template-columns: 1.5rem 1fr;
 }
 
 .form__input {
   height: fit-content;
   border: none;
   padding: 0;
+  -moz-appearance: none;
+}
+
+.form__input:focus {
+  padding-left: 0.5rem;
+}
+
+.form__input::-webkit-outer-spin-button,
+.form__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
 }
 
 .form__input_small {
@@ -2431,6 +2450,15 @@ select {
   }
 }
 @media (max-width: 1082px) {
+  .add-payment__wrapper {
+    max-width: fit-content;
+    overflow-y: scroll;
+  }
+
+  .add-payment__wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
   .dashboard-frame-row {
     justify-content: flex-start;
   }
@@ -2532,6 +2560,20 @@ select {
     flex-direction: column;
   }
 
+  .add-payment__form {
+    padding: 1rem;
+  }
+
+  .header__text {
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .form__checkbox-lable {
+    letter-spacing: -0.02rem;
+  }
+
   body {
     overflow: hidden;
   }
@@ -2548,6 +2590,24 @@ select {
   .page-frame__overlay,
 .bag-area__overlay {
     z-index: -1;
+  }
+
+  .form__date-cvc {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 448px) and (orientation: portrait) {
+  .form__input_small,
+.form__input_smaller {
+    width: auto;
+  }
+
+  .form__input-area_small {
+    grid-template-columns: 1.5rem 13.6875rem;
+  }
+
+  .add-payment__header {
+    justify-content: center;
   }
 }
 html {
