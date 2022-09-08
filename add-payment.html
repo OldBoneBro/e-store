@@ -39,7 +39,7 @@
                         Name</label></p>
                 <div class="form__input-area">
                     <input data-cardholder-name class="form__input" id="name" type="text" placeholder="John Maker"
-                        pattern="[A-Za-z]+\s[A-Za-z]+">
+                        pattern="[A-Za-z'-]+\s[A-Za-z'-]+">
                 </div>
             </div>
             <div class="form__input-container">
@@ -47,8 +47,8 @@
                 </p>
                 <div class="form__input-area form__input-area_with-icon">
                     <img class="placeholder-for-svgs" src="img/store_icons/card.svg" alt="">
-                    <input data-card-number class="form__input form__input-number" id="card" type="text"
-                        inputmode="numeric" placeholder="5126-5987-2214-7621"
+                    <input data-input-with-icon data-card-number class="form__input form__input-number" id="card"
+                        type="text" inputmode="numeric" placeholder="5126-5987-2214-7621"
                         pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}">
                 </div>
             </div>
@@ -59,8 +59,8 @@
                             </label></p>
                         <div class="form__input-area form__input-area_with-icon form__input-area_small">
                             <img class="placeholder-for-svgs" src="img/store_icons/calendar-number.svg" alt="">
-                            <input data-expiry-date class="form__input form__input_small" id="date" type="number"
-                                placeholder="MM/YYYY">
+                            <input data-input-with-icon data-expiry-date class="form__input form__input_small" id="date"
+                                type="number" placeholder="MM/YYYY">
                         </div>
                     </div>
                 </div>
