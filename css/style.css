@@ -2282,7 +2282,7 @@ select {
 }
 
 .form__input-area_with-icon {
-  grid-template-columns: 1.5rem 13.6875rem;
+  grid-template-columns: 1.5rem 1fr;
   gap: 0.625rem;
 }
 
@@ -2558,6 +2558,14 @@ select {
   .bag__product-rating,
 .bag__product-price-rating {
     flex-direction: column;
+  }
+
+  .form__input-area_with-icon {
+    grid-template-columns: 1.5rem 13.6875rem;
+  }
+
+  .add-payment__wrapper {
+    padding: 0.5rem;
   }
 
   .add-payment__form {
