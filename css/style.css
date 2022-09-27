@@ -2447,6 +2447,10 @@ select {
   display: none;
 }
 
+.form__checkbox-lable {
+  width: fit-content;
+}
+
 @media (max-width: 1439px) {
   .bag-area,
 .bag__product-x,
@@ -2606,6 +2610,7 @@ select {
   }
 
   .form__checkbox-lable {
+    width: fit-content;
     letter-spacing: -0.02rem;
   }
 
