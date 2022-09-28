@@ -2335,6 +2335,11 @@ select {
   margin: 0;
 }
 
+.form__input-cardholder-name:-webkit-autofill,
+.form__input-cardholder-name:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
 .form__input_small {
   width: 6.5rem;
 }
