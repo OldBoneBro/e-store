@@ -188,6 +188,10 @@ select {
   opacity: 0.3;
 }
 
+.success-for-svgs {
+  filter: invert(66%) sepia(60%) saturate(2368%) hue-rotate(113deg) brightness(95%) contrast(98%);
+}
+
 .wrapper {
   width: 2529px;
   height: 1854px;
