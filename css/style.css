@@ -2460,6 +2460,17 @@ select {
   width: fit-content;
 }
 
+.add_address__form {
+  display: grid;
+  width: 42.25rem;
+  height: 52.125rem;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 1rem;
+  border-radius: 0.9375rem;
+}
+
 @media (max-width: 1439px) {
   .bag-area,
 .bag__product-x,
