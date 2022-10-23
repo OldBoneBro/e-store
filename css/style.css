@@ -2460,15 +2460,22 @@ select {
   width: fit-content;
 }
 
-.add_address__form {
+.add-address__form {
   display: grid;
   width: 42.25rem;
-  height: 52.125rem;
   justify-content: center;
   align-items: center;
   padding: 2rem;
   gap: 1rem;
   border-radius: 0.9375rem;
+}
+
+.input-container {
+  width: 38.25rem;
+}
+
+.form__cta-button_only-txt {
+  grid-template-columns: 1fr;
 }
 
 @media (max-width: 1439px) {
