@@ -2461,23 +2461,28 @@ select {
 }
 
 .page__add-address-container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: minmax(20.4375rem, 42.3125rem);
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 100vh;
+  padding: 0.48rem;
   background-color: #ededed;
-  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.page__add-address-container::-webkit-scrollbar {
+  display: none;
 }
 
 .add-address__form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
-  min-width: 20.4375rem;
-  max-width: 42.3125rem;
   padding: 2rem;
   gap: 1rem;
   border-radius: 15px;
