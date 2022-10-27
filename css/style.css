@@ -2235,6 +2235,10 @@ select {
   padding-top: 3.5rem;
 }
 
+.link_no-decoration {
+  text-decoration: none;
+}
+
 .add-payment__wrapper {
   width: 42.25rem;
   display: grid;
@@ -2375,6 +2379,10 @@ select {
   grid-template-columns: 1rem 1fr;
   align-content: center;
   padding: 1rem 0.5rem;
+}
+
+.form__save-checkbox_none-padding {
+  padding: 0;
 }
 
 .form__checkbox {
