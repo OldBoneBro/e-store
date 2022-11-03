@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+*:focus,
+*:active {
+  outline: none;
+}
+
 ul[class],
 ol[class] {
   padding: 0;
@@ -1187,6 +1192,10 @@ select {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.outline-offset {
+  outline-offset: -2px;
 }
 
 .nav-link {
