@@ -2981,6 +2981,11 @@ select {
     justify-content: center;
   }
 }
+html,
+body {
+  height: 100%;
+}
+
 html {
   font-family: "Cabin";
 }
