@@ -2796,6 +2796,14 @@ select {
     display: none;
   }
 
+  .navbar__device-appearance {
+    margin: 0;
+  }
+
+  .navbar__appearance {
+    border-radius: 0;
+  }
+
   .cta_total {
     grid-template-columns: 1fr;
     justify-items: center;
