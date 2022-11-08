@@ -2801,6 +2801,11 @@ select {
   }
 
   .navbar__appearance {
+    grid-template-rows: 1fr;
+    align-items: flex-start;
+  }
+
+  .navbar__appearance {
     border-radius: 0;
   }
 
