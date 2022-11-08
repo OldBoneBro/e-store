@@ -1342,7 +1342,7 @@ select {
 }
 
 .navbar__device-appearance {
-  height: var(--navbar-height);
+  height: 100%;
   margin: 1rem 0 1rem 1rem;
 }
 
@@ -2803,6 +2803,10 @@ select {
   .navbar__appearance {
     grid-template-rows: 1fr;
     align-items: flex-start;
+  }
+
+  .nav-links__top {
+    gap: 1.5rem;
   }
 
   .navbar__appearance {
