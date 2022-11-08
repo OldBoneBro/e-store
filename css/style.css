@@ -1342,7 +1342,7 @@ select {
 }
 
 .navbar__device-appearance {
-  height: 100%;
+  height: var(--navbar-height);
   margin: 1rem 0 1rem 1rem;
 }
 
