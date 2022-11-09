@@ -1427,6 +1427,7 @@ select {
 
 .input-wrapper {
   display: grid;
+  align-content: center;
   padding: 0.5rem 1rem;
   background-color: #ffffff;
   border-radius: 0.8125rem;
@@ -1479,6 +1480,7 @@ select {
 }
 
 .simple-input {
+  -webkit-appearance: none;
   border: none;
   padding: 0;
 }
@@ -2226,7 +2228,7 @@ select {
 
 .cta_total {
   display: grid;
-  grid-template-columns: 5.1875rem 1fr;
+  grid-template-columns: 5.3125rem 1fr;
   gap: 1rem;
   padding: 0;
 }
