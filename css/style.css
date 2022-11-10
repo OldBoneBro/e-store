@@ -1672,7 +1672,7 @@ select {
 }
 
 .page__container__forms {
-  display: grid;
+  display: flex;
   justify-content: center;
   align-content: center;
 }
@@ -2460,9 +2460,9 @@ select {
 
 .add-payment__wrapper {
   width: 42.25rem;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
-  overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -2824,6 +2824,10 @@ select {
     width: 100%;
   }
 
+  .add-payment__wrapper {
+    overflow-y: scroll;
+  }
+
   .enclosing-container {
     gap: 0;
     grid-template: 1fr/1fr;
@@ -2842,6 +2846,7 @@ select {
 }
 @media (max-width: 1082px) {
   .add-payment__wrapper {
+    min-width: 21.8125rem;
     max-width: fit-content;
     overflow-y: scroll;
   }
