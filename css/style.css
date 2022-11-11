@@ -381,72 +381,72 @@ select {
 }
 
 .form__input-area_error-prone {
-  -webkit-animation: highlight 0.25s linear both;
-  animation: highlight 0.25s linear both;
+  -webkit-animation: highlight-elem 0.25s linear both;
+  animation: highlight-elem 0.25s linear both;
 }
 
 @-webkit-keyframes flicker-2 {
   0%, 100% {
-    outline: #e5252c solid 10px;
+    box-shadow: 0px 4px 16px #e5252c;
   }
   10% {
-    outline: #e5252c solid 0px;
+    box-shadow: 0px 0px 0px #e5252c;
   }
   20% {
-    outline: #e5252c solid 10px;
+    box-shadow: 0px 4px 16px #e5252c;
   }
   30% {
-    outline: #e5252c solid 0px;
+    box-shadow: 0px 0px 0px #e5252c;
   }
   40% {
-    outline: #e5252c solid 10px;
+    box-shadow: 0px 4px 16px #e5252c;
   }
   50% {
-    outline: #e5252c solid 0px;
+    box-shadow: 0px 0px 0px #e5252c;
   }
   60% {
-    outline: #e5252c solid 10px;
+    box-shadow: 0px 4px 16px #e5252c;
   }
   70% {
-    outline: #e5252c solid 0px;
+    box-shadow: 0px 0px 0px #e5252c;
   }
   80% {
-    outline: #e5252c solid 10px;
+    box-shadow: 0px 4px 16px #e5252c;
   }
   90% {
-    outline: #e5252c solid 0px;
+    box-shadow: 0px 0px 0px #e5252c;
   }
 }
 @keyframes flicker-2 {
   0%, 100% {
-    outline: #e5252c solid 10px;
+    box-shadow: 0px 4px 16px #e5252c;
   }
   10% {
-    outline: #e5252c solid 0px;
+    box-shadow: 0px 0px 0px #e5252c;
   }
   20% {
-    outline: #e5252c solid 10px;
+    box-shadow: 0px 4px 16px #e5252c;
   }
   30% {
-    outline: #e5252c solid 0px;
+    box-shadow: 0px 0px 0px #e5252c;
   }
   40% {
-    outline: #e5252c solid 10px;
+    box-shadow: 0px 4px 16px #e5252c;
   }
   50% {
-    outline: #e5252c solid 0px;
+    box-shadow: 0px 0px 0px #e5252c;
   }
   60% {
-    outline: #e5252c solid 10px;
+    box-shadow: 0px 4px 16px #e5252c;
   }
   70% {
-    outline: #e5252c solid 0px;
+    box-shadow: 0px 0px 0px #e5252c;
   }
   80% {
-    outline: #e5252c solid 10px;
+    box-shadow: 0px 4px 16px #e5252c;
   }
   90% {
-    outline: #e5252c solid 0px;
+    box-shadow: 0px 0px 0px #e5252c;
   }
 }
 @-webkit-keyframes vibrate-3 {
@@ -541,7 +541,7 @@ select {
     transform: translate(0);
   }
 }
-@keyframes highlight {
+@keyframes highlight-elem {
   0% {
     box-shadow: 0px 4px 16px rgba(26, 31, 22, 0.15);
   }
@@ -552,12 +552,12 @@ select {
     box-shadow: 0px 4px 16px rgba(26, 31, 22, 0.15);
   }
 }
-@-webkit-keyframes highlight {
+@-webkit-keyframes highlight-elem {
   0% {
     box-shadow: 0px 4px 16px rgba(26, 31, 22, 0.15);
   }
   50% {
-    box-shadow: 0px 4px 16px rgba(229, 37, 44, 0.15);
+    box-shadow: 0px 4px 16px #e5252c;
   }
   100% {
     box-shadow: 0px 4px 16px rgba(26, 31, 22, 0.15);
@@ -2463,6 +2463,7 @@ select {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  justify-content: center;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -2507,7 +2508,8 @@ select {
 
 .add-payment__form {
   width: 100%;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
   padding: 2rem;
   border-radius: 15px;
@@ -2521,7 +2523,8 @@ select {
 
 .form__input-container, .form__save-checkbox {
   height: fit-content;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 0.5rem;
   padding: 0.5rem;
 }
@@ -2531,8 +2534,9 @@ select {
 }
 
 .form__input-area {
+  width: 100%;
   height: fit-content;
-  display: grid;
+  display: flex;
   padding: 1rem 1.5rem;
   background: #ffffff;
   box-shadow: 0px 4px 16px rgba(26, 31, 22, 0.15);
@@ -2541,12 +2545,7 @@ select {
 }
 
 .form__input-area_with-icon {
-  grid-template-columns: 1.5rem 1fr;
   gap: 0.625rem;
-}
-
-.form__input-area_small {
-  grid-template-columns: 1.5rem 1fr;
 }
 
 .form__input {
@@ -2573,6 +2572,10 @@ select {
 }
 
 .form__input_small {
+  width: 11.625rem;
+}
+
+.form__input-field_small {
   width: 6.5rem;
 }
 
@@ -2581,6 +2584,10 @@ select {
 }
 
 .form__input_smaller {
+  width: 8.8125rem;
+}
+
+.form__input-field_smaller {
   width: 5.8125rem;
 }
 
@@ -2589,8 +2596,9 @@ select {
 }
 
 .form__date-cvc {
-  display: grid;
-  grid-template-columns: 11.625rem 8.8125rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   gap: 2rem;
   padding: 0 0.5rem;
 }
@@ -2600,7 +2608,7 @@ select {
 }
 
 .form__save-checkbox {
-  grid-template-columns: 1rem 1fr;
+  flex-direction: row;
   align-content: center;
   padding: 1rem 0.5rem;
 }
@@ -2837,11 +2845,15 @@ select {
     align-self: center;
   }
 }
-@media (max-height: 1300px) {
+@media (max-width: 1300px) {
   .checkout__content-frame,
 .page__add-address-container,
 .add-payment__wrapper {
     padding: 4rem 0.5rem;
+  }
+
+  .add-payment__wrapper {
+    justify-content: flex-start;
   }
 }
 @media (max-width: 1082px) {
@@ -2961,10 +2973,6 @@ select {
     flex-direction: row;
   }
 
-  .form__input-area_with-icon {
-    grid-template-columns: 1.5rem 13.6875rem;
-  }
-
   .add-payment__wrapper,
 .page__add-address-container {
     padding: 4rem 0.5rem;
@@ -2972,6 +2980,11 @@ select {
 
   .add-payment__form {
     padding: 1rem;
+  }
+
+  .add-payment__information,
+.add-address__information {
+    padding: 0 1rem;
   }
 
   .header__text {
@@ -3006,19 +3019,11 @@ select {
   }
 
   .form__date-cvc {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 @media (max-width: 448px) and (orientation: portrait) {
-  .form__input_small,
-.form__input_smaller {
-    width: auto;
-  }
-
-  .form__input-area_small {
-    grid-template-columns: 1.5rem 13.6875rem;
-  }
-
   .add-payment__header {
     justify-content: center;
   }
