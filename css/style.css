@@ -387,66 +387,66 @@ select {
 
 @-webkit-keyframes flicker-2 {
   0%, 100% {
-    box-shadow: 0px 4px 16px #e5252c;
+    box-shadow: 0px 0px 0px 5px #e5252c;
   }
   10% {
-    box-shadow: 0px 0px 0px #e5252c;
+    box-shadow: none;
   }
   20% {
-    box-shadow: 0px 4px 16px #e5252c;
+    box-shadow: 0px 0px 0px 5px #e5252c;
   }
   30% {
-    box-shadow: 0px 0px 0px #e5252c;
+    box-shadow: none;
   }
   40% {
-    box-shadow: 0px 4px 16px #e5252c;
+    box-shadow: 0px 0px 0px 5px #e5252c;
   }
   50% {
-    box-shadow: 0px 0px 0px #e5252c;
+    box-shadow: none;
   }
   60% {
-    box-shadow: 0px 4px 16px #e5252c;
+    box-shadow: 0px 0px 0px 5px #e5252c;
   }
   70% {
-    box-shadow: 0px 0px 0px #e5252c;
+    box-shadow: none;
   }
   80% {
-    box-shadow: 0px 4px 16px #e5252c;
+    box-shadow: 0px 0px 0px 5px #e5252c;
   }
   90% {
-    box-shadow: 0px 0px 0px #e5252c;
+    box-shadow: none;
   }
 }
 @keyframes flicker-2 {
   0%, 100% {
-    box-shadow: 0px 4px 16px #e5252c;
+    box-shadow: 0px 0px 0px 5px #e5252c;
   }
   10% {
-    box-shadow: 0px 0px 0px #e5252c;
+    box-shadow: none;
   }
   20% {
-    box-shadow: 0px 4px 16px #e5252c;
+    box-shadow: 0px 0px 0px 5px #e5252c;
   }
   30% {
-    box-shadow: 0px 0px 0px #e5252c;
+    box-shadow: none;
   }
   40% {
-    box-shadow: 0px 4px 16px #e5252c;
+    box-shadow: 0px 0px 0px 5px #e5252c;
   }
   50% {
-    box-shadow: 0px 0px 0px #e5252c;
+    box-shadow: none;
   }
   60% {
-    box-shadow: 0px 4px 16px #e5252c;
+    box-shadow: 0px 0px 0px 5px #e5252c;
   }
   70% {
-    box-shadow: 0px 0px 0px #e5252c;
+    box-shadow: none;
   }
   80% {
-    box-shadow: 0px 4px 16px #e5252c;
+    box-shadow: 0px 0px 0px 5px #e5252c;
   }
   90% {
-    box-shadow: 0px 0px 0px #e5252c;
+    box-shadow: none;
   }
 }
 @-webkit-keyframes vibrate-3 {
@@ -2973,6 +2973,17 @@ select {
     flex-direction: row;
   }
 
+  .form__input-field_mobile-sized {
+    width: calc(100% - 34px);
+  }
+
+  .form__input_smaller,
+.form__input_small,
+.form__input-field_smaller,
+.form__input-field_iconless {
+    width: 100%;
+  }
+
   .add-payment__wrapper,
 .page__add-address-container {
     padding: 4rem 0.5rem;
@@ -3020,7 +3031,7 @@ select {
 
   .form__date-cvc {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
   }
 }
 @media (max-width: 448px) and (orientation: portrait) {

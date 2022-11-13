@@ -43,7 +43,8 @@
                         class="cursor-pointer">Cardholder
                         Name</label></p>
                 <div class="form__input-area">
-                    <input data-cardholder-name class="form__input form__input-cardholder-name" id="name" type="text"
+                    <input data-cardholder-name
+                        class="form__input form__input-cardholder-name form__input-field_iconless" id="name" type="text"
                         placeholder="John Maker" pattern="[A-Za-z'-]+\s[A-Za-z'-]+" autocomplete="off" required>
                 </div>
             </div>
@@ -54,8 +55,9 @@
                 </p>
                 <div class="form__input-area form__input-area_with-icon">
                     <img class="placeholder-for-svgs" src="img/store_icons/card.svg" alt="">
-                    <input data-card-number data-input-with-icon class="form__input form__input-number" id="card"
-                        type="text" inputmode="numeric" placeholder="5126-5987-2214-7621"
+                    <input data-card-number data-input-with-icon
+                        class="form__input form__input-number form__input-field_mobile-sized" id="card" type="text"
+                        inputmode="numeric" placeholder="5126-5987-2214-7621"
                         pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" required>
                 </div>
             </div>
@@ -67,8 +69,9 @@
                             </label></p>
                         <div class="form__input-area form__input-area_with-icon form__input-area_small">
                             <img class="placeholder-for-svgs" src="img/store_icons/calendar-number.svg" alt="">
-                            <input data-expiry-date data-input-with-icon class="form__input form__input-field_small"
-                                id="date" type="text" inputmode="numeric" placeholder="MM/YYYY" required>
+                            <input data-expiry-date data-input-with-icon
+                                class="form__input form__input-field_small form__input-field_mobile-sized" id="date"
+                                type="text" inputmode="numeric" placeholder="MM/YYYY" required>
                         </div>
                     </div>
                 </div>
@@ -78,8 +81,8 @@
                                 class="cursor-pointer">CVC</label>
                         </p>
                         <div class="form__input-area">
-                            <input data-cvc class="form__input form__input-field_smaller" id="cvc" type="text"
-                                inputmode="numeric" placeholder="123" pattern="^\d{3}" required>
+                            <input data-cvc class="form__input form__input-field_smaller form__input-field_iconless"
+                                id="cvc" type="text" inputmode="numeric" placeholder="123" pattern="^\d{3}" required>
                         </div>
                     </div>
                 </div>
