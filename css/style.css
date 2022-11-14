@@ -2603,6 +2603,7 @@ select {
   padding: 0 0.5rem;
 }
 
+.form__save-checkbox_none-padding,
 .form__input-field {
   padding: 0;
 }
@@ -2611,10 +2612,6 @@ select {
   flex-direction: row;
   align-content: center;
   padding: 1rem 0.5rem;
-}
-
-.form__save-checkbox_none-padding {
-  padding: 0;
 }
 
 .form__checkbox {
@@ -2863,16 +2860,13 @@ select {
     overflow-y: scroll;
   }
 
-  .add-payment__wrapper::-webkit-scrollbar {
+  .landscape__specific-toggler,
+.add-payment__wrapper::-webkit-scrollbar {
     display: none;
   }
 
   .dashboard-frame-row {
     justify-content: flex-start;
-  }
-
-  .landscape__specific-toggler {
-    display: none;
   }
 
   .portrait__specific-toggler {
@@ -2884,19 +2878,13 @@ select {
   }
 }
 @media (max-width: 1082px) and (orientation: landscape) {
-  .portrait__toggler_on-off {
+  .portrait__specific-toggler,
+.portrait__toggler_on-off {
     display: none;
   }
 
-  .landscape__toggler_default {
-    display: block;
-  }
-
-  .portrait__specific-toggler {
-    display: none;
-  }
-
-  .landscape__specific-toggler {
+  .landscape__specific-toggler,
+.landscape__toggler_default {
     display: block;
   }
 }
@@ -2920,11 +2908,8 @@ select {
   }
 }
 @media (max-width: 725px) {
-  .top-area__wrapper {
-    flex-direction: column;
-  }
-
-  .top-area__image-area {
+  .top-area__image-area,
+.top-area__wrapper {
     flex-direction: column;
   }
 
